@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify風プレイヤー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player-container">
+  <!-- メインプレイヤー -->
+  <div class="main-player">
+    <img src="https://via.placeholder.com/400x400.png?text=Album+Cover" alt="アルバムカバー" class="cover">
+    <div class="song-info">
+      <div class="title">Song Title</div>
+      <div class="artist">Artist Name</div>
+    </div>
+    <audio id="audio-player" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+    <div class="controls">
+      <button id="prev">&#9664;</button>
+      <button id="play">Play</button>
+      <button id="next">&#9654;</button>
+    </div>
+  </div>
+
+  <!-- 曲リスト -->
+  <div class="track-list">
+    <div class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+      <img src="https://via.placeholder.com/60x60.png?text=1" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Song 1</p>
+        <p class="track-artist">Artist 1</p>
+      </div>
+    </div>
+    <div class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+      <img src="https://via.placeholder.com/60x60.png?text=2" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Song 2</p>
+        <p class="track-artist">Artist 2</p>
+      </div>
+    </div>
+    <div class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">
+      <img src="https://via.placeholder.com/60x60.png?text=3" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Song 3</p>
+        <p class="track-artist">Artist 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+                          </html>
